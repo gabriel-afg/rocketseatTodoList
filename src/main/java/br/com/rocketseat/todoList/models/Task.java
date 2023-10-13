@@ -6,7 +6,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -21,7 +20,7 @@ public class Task {
     @Column(length = 50)
     private String tittle;
     private LocalDateTime starting_at;
-    private LocalDate ended_at;
+    private LocalDateTime ended_at;
     private String priority;
 
     private LocalDateTime created_at;
